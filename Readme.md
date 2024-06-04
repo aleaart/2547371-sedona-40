@@ -2,7 +2,7 @@
 
 * Студент: [Артём Мищенко](https://up.htmlacademy.ru/htmlcss/40/user/2547371).
 * Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
-* Сайт: [Мой проект Седона]{https://aleaart.github.io/2547371-sedona-40/}.
+* Сайт: [Мой проект Седона](https://aleaart.github.io/2547371-sedona-40/).
 
 ---
 
