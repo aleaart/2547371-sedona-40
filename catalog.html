@@ -9,14 +9,14 @@
 <body>
   <header class="page-header">
 
-    <a class="header-logo-link" href="index.html" aria-current="page">
-      <img src="#" alt="Логотип городка Седона">
+    <a class="header-logo-link" href="index.html">
+      <img class="header-logo" src="images/logo.svg" alt="Логотип городка Седона">
     </a>
 
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-items">
-          <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-items">
           <a class="navigation-link" href="#">О Седоне</a>
@@ -51,16 +51,16 @@
       <h1 class="catalog-header-title">Гостиницы Седоны</h1>
 
       <section class="catalog-breadcrumbs">
-        <ul class="breadcrumbs-list">
+        <ol class="breadcrumbs-list">
           <li class="breadcrumbs-list">
             <a class="breadcrumbs-items" href="index.html">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li>
-            <a class="breadcrumbs-items">Гостиницы</a>
+          <li class="breadcrumbs-list">
+            <span>Гостиницы</span>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="catalog-hotels">
@@ -72,19 +72,19 @@
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  " Бассейн "
+                    Бассейн
                 </label>
               </li>
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="Parking-lot" checked>
-                  " Парковка "
+                    Парковка
                 </label>
               </li>
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="WiFi">
-                  " Wi-Fi "
+                    Wi-Fi
                 </label>
               </li>
             </ul>
@@ -95,28 +95,28 @@
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotels-group" value="hotel" checked>
-                  " Гостиница "
+                    Гостиница
                 </label>
               </li>
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotels-group" value="motel">
-                  " Мотель "
+                    Мотель
                 </label>
               </li>
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotels-group" value="apartments">
-                  " Апартаменты "
+                    Апартаменты 
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-            <lable for="price-from">от</lable>
+            <label for="price-from">от</label>
             <input class="field" type="number" name="price-from" id="price-form" value="0">
-            <lable for="price-to">до</lable>
+            <label for="price-to">до</label>
             <input class="field" type="number" name="price-to" id="price-to" value="9000">
           </fieldset>
           <button class="button" type="submit">Применить</button>
@@ -209,7 +209,7 @@
       </ul>
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-curent">1</a>
+          <span>1</span>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -240,30 +240,30 @@
     </section>
   </main>
 
-  <footer>
-    <div>
-      <ul class="contacts-list">
-        <li class="contacts-item">
-          <a class="button" href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="button" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-        </li>
-        <li class="contacts-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Ютуб</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div>
+  <footer class="page-footer">
+    <div class="social-networks">
+    <ul class="contacts-list">
+      <li class="contacts-item">
+        <a class="button" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="contacts-item">
+        <a class="button" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Телеграмм</span>
+        </a>
+      </li>
+      <li class="contacts-item">
+        <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Ютуб</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+    <div class="phone-nubmer">
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </div>
-    <div>
+    <div class="logo-htmlacademy">
       <a class="htmlacademy-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="#" alt="html-academy">
       </a>
