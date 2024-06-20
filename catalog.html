@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
@@ -51,6 +52,7 @@
       <h1 class="catalog-header-title">Гостиницы Седоны</h1>
 
       <section class="catalog-breadcrumbs">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
         <ol class="breadcrumbs-list">
           <li class="breadcrumbs-list">
             <a class="breadcrumbs-items" href="index.html">
@@ -107,15 +109,15 @@
               <li class="hotels-filter-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotels-group" value="apartments">
-                    Апартаменты 
+                    Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="hotels-filter-group">
             <legend class="hotels-filter-title">Стоимость, ₽:</legend>
-            <label for="price-from">от</label>
-            <input class="field" type="number" name="price-from" id="price-form" value="0">
+            <label for="price-form">от</label>
+            <input class="field" type="number" name="price-form" id="price-form" value="0">
             <label for="price-to">до</label>
             <input class="field" type="number" name="price-to" id="price-to" value="9000">
           </fieldset>
@@ -242,28 +244,30 @@
 
   <footer class="page-footer">
     <div class="social-networks">
+      <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="contacts-list">
       <li class="contacts-item">
         <a class="button" href="https://vk.com/htmlacademy">
-          <img src="images/footer/vk-icon.svg" alt="Иконка ВК">
+          <img src="images/footer/vk-icon.svg" alt="Ссылка ведет на группу Вконтакте">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="contacts-item">
         <a class="button" href="https://t.me/htmlacademy">
-          <img src="images/footer/tg-icon.svg" alt="Иконка ТГ">
+          <img src="images/footer/tg-icon.svg" alt="Ссылка ведет на Телеграмм канал">
           <span class="visually-hidden">Телеграмм</span>
         </a>
       </li>
       <li class="contacts-item">
         <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-          <img src="images/footer/yt-icon.svg" alt="Иконга Ютуб">
+          <img src="images/footer/yt-icon.svg" alt="Ссылка ведет на ютуб канал">
           <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
     </ul>
   </div>
     <div class="phone-nubmer">
+      <h2 class="visually-hidden">Номер телефона</h2>
       <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </div>
     <div class="logo-htmlacademy">
