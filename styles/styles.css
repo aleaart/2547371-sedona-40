@@ -23,6 +23,15 @@ body {
   color: #333333;
 }
 
+.button {
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* main-index */
+/* секция hero-index */
 .hero {
   background-color: #82b3d3;
   background-image: url("../images/main-index/mountains-background.jpg");
@@ -32,71 +41,236 @@ body {
   background-size: cover;
 }
 
+/* секция advantages-index */
+.advantages {
+  color: #000000;
+}
+
+.advantages-lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.advantages-lead-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
 .advantages-item {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.item-wide {
   background-color: #82b3d3;
+  color: #ffffff;
 }
 
-.advantages-item:nth-child(3) {
+..advantages-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.advantages-item p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.advantages-item-square {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
+  color: #000000;
+}
+
+.advantages-item-tourists {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+
+.advantages-description-second {
+  color: #333333;
+}
+
+/* секция infrastruture-index */
+.infrastructure {
+  color: #000000;
+}
+
+.infrastructure-lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.infrastructure-lead-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
 }
 
 .infrastructure-item {
+  color: #000000;
+}
+
+.infrastructure-item h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.infrastructure-item p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.infrastructure-item-lodging {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.infrastructure-item:nth-child(2) {
-  background-color: #f2f2f2;
+.infrastructure-item-souvenirs {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.text-color-second {
+/* секция search-index */
+.search-index {
+  color: #000000;
+}
+
+.search-index-lead {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-index-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* секция subscribe-index */
+.subscribe {
   color: #ffffff;
+}
+
+.subscribe h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.subscribe p {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }
 
 .subscribe-index {
   background-color: #82b3d3;
   background-image: url("../images/main-index/blur-mountains.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.catalog-header {
-  background-color: #82b3d3;
-  background-image: url("../images/main-catalog/blur-mountains.jpg");
-  color: #FFFFFF;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.pagination-first {
+.subscribe-form-field {
   background-color: #f2f2f2;
 }
 
-.pagination-link {
+/* main-catalog */
+/* секция main-catalog-index */
+.main-catalog-header {
   background-color: #82b3d3;
+  background-image: url("../images/main-catalog/blur-mountains.jpg");
   color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.select-control {
+.catalog-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-list {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.breadcrumbs-link {
+  text-decoration: none;
+}
+
+.filter-group-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-group-item {
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.price-form-field {
   font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
-.field {
+/* секция search-result */
+.catalog-search-result {
+  color: #000000;
+}
+
+.result-sorting-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.sorting-select-control {
   font-family: "PT Sans", sans-serif;
-  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
 }
 
-.button {
+.sorting-link {
+  text-decoration: none;
+}
+
+.hotel-card h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-card p {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.show-more {
   font-family: "PT Sans", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-
 }
 
 .favorites {
@@ -105,8 +279,57 @@ body {
   font-weight: bold;
 }
 
-.show-more {
-  font-family: "PT Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold;
+.card-rating {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/* PAGINATION */
+.pagination {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.pagination a {
+  background-color: #82b3d3;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-item-description {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000000;
+}
+
+/* секция subcribe */
+.subscribe-catalog {
+  color: #000000;
+}
+
+.subscribe-catalog p {
+  color: #333333;
+}
+
+/* footer */
+.contacts-link {
+  text-decoration: none;
+}
+
+.footer-contacts-address-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
 }
