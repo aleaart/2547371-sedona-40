@@ -14,13 +14,45 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 1280px;
+  margin: 0 auto;
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background-color: #ffffff;
-  margin: 0;
+  font-weight: 400;
+  background-color: #f2f2f2;
   color: #333333;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.container {
+
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .button {
@@ -28,20 +60,73 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82b3d3;
+  color: #ffffff;
+
 }
 
-/* main-index */
-/* секция hero-index */
+
+
+.button-reset {
+  background-color: transparent;
+}
+
+/* PAGE-HEADER */
+.page-header {
+  display: flex;
+  padding: 0 70px;
+  color: #000000;
+}
+
+.button-page-header {
+  background-color: #756157;
+}
+
+/* НАВИГАЦИЯ INDEX-PAGE-HEADER */
+.navigation {
+  display: flex;
+  width: 100%;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-menu {
+  margin-right: 285px;
+  Width: 339px;
+  Height: 64px;
+}
+
+.navigation-menu-user {
+  width: 268px;
+  height: 64px;
+}
+
+.navigation-link {
+  display: block;
+  padding: 24px 19px;
+
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* MAIN-INDEX */
+/* СЕКЦИЯ HERO-INDEX */
 .hero {
   background-color: #82b3d3;
   background-image: url("../images/main-index/mountains-background.jpg");
-
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* секция advantages-index */
+/* СЕКЦИЯ ADVANTAGES В INDEX */
 .advantages {
   color: #000000;
 }
@@ -52,10 +137,7 @@ body {
   font-weight: 700;
 }
 
-.advantages-lead-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
+.advantages-description {
   color: #333333;
 }
 
@@ -64,16 +146,14 @@ body {
   color: #ffffff;
 }
 
-..advantages-item h3 {
+.advantages-item h3 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .advantages-item p {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .advantages-item-square {
@@ -95,7 +175,7 @@ body {
   color: #333333;
 }
 
-/* секция infrastruture-index */
+/* СЕКЦИЯ INFRASTRUTURE-INDEX */
 .infrastructure {
   color: #000000;
 }
@@ -106,10 +186,7 @@ body {
   font-weight: 700;
 }
 
-.infrastructure-lead-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
+.infrastructure-description {
   color: #333333;
 }
 
@@ -120,13 +197,11 @@ body {
 .infrastructure-item h3 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .infrastructure-item p {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -138,25 +213,14 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-/* секция search-index */
-.search-index {
+/* СЕКЦИЯ SEARCH-INDEX */
+.search-lead {
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
 }
 
-.search-index-lead {
-  font-size: 30px;
-  line-height: 36px;
-  font-weight: 700;
-}
-
-.search-index-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
-  color: #333333;
-}
-
-/* секция subscribe-index */
+/* СЕКЦИЯ SUBSCRIBE-INDEX */
 .subscribe {
   color: #ffffff;
 }
@@ -164,13 +228,11 @@ body {
 .subscribe h2 {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
 }
 
 .subscribe p {
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
 }
 
 .subscribe-index {
@@ -185,8 +247,8 @@ body {
   background-color: #f2f2f2;
 }
 
-/* main-catalog */
-/* секция main-catalog-index */
+/* MAIN-CATALOG */
+/* СЕКЦИЯ MAIN-CATALOG-INDEX */
 .main-catalog-header {
   background-color: #82b3d3;
   background-image: url("../images/main-catalog/blur-mountains.jpg");
@@ -199,19 +261,20 @@ body {
 .catalog-header-title {
   font-size: 60px;
   line-height: 78px;
-  font-weight: 700;
 }
 
+/* ХЛЕБНЫЕ КРОШКИ */
 .breadcrumbs-list {
   font-size: 16px;
   line-height: 21px;
-  font-weight: 400;
 }
 
 .breadcrumbs-link {
   text-decoration: none;
+  color: inherit;
 }
 
+/* СЕКЦИЯ HOTELS-FILTER */
 .filter-group-title {
   font-size: 20px;
   line-height: 24px;
@@ -221,17 +284,16 @@ body {
 .filter-group-item {
   font-size: 18px;
   line-height: 23px;
-  font-weight: 400;
 }
 
-.price-form-field {
+.filter-group-price {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
-/* секция search-result */
+/* СЕКЦИЯ SEARCH-RESULT */
 .catalog-search-result {
   color: #000000;
 }
@@ -239,38 +301,43 @@ body {
 .result-sorting-title {
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
 }
 
 .sorting-select-control {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: #333333;
 }
 
-.sorting-link {
-  text-decoration: none;
+/* HOTEL-CARD */
+.hotel-card {
+  width: 340px;
+  height: 438px;
+  border: 1px;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #e6e6e6;
 }
 
 .hotel-card h3 {
   font-size: 24px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .hotel-card p {
   font-size: 18px;
   line-height: 21px;
-  font-weight: 400;
   color: #333333;
 }
 
-.card-rating {
+.hotel-card-more {
+  background-color: #756157;
+}
+
+.rating-value {
   font-size: 16px;
   line-height: 20px;
-  font-weight: 400;
   color: #333333;
 }
 
@@ -294,13 +361,10 @@ body {
 }
 
 .pagination-item-description {
-  font-size: 22px;
-  line-height: 26px;
-  font-weight: 400;
   color: #000000;
 }
 
-/* секция subcribe */
+/* СЕКЦИЯ SUBCRIBE */
 .subscribe-catalog {
   color: #000000;
 }
@@ -309,7 +373,7 @@ body {
   color: #333333;
 }
 
-/* footer */
+/* FOOTER */
 .contacts-link {
   text-decoration: none;
 }
@@ -317,7 +381,6 @@ body {
 .footer-contacts-address-phone {
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   color: #000000;
   text-decoration: none;
 }
